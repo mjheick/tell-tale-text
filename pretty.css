@@ -1,0 +1,49 @@
+html, body, div {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: white;
+}
+
+.div-header {
+  margin-bottom: 16px;
+}
+.div-logo {
+  display: none;
+}
+.div-logo-text {
+  display: none;
+}
+
+/* Mobile up to 500px */
+@media only screen and (max-width: 600px) {
+  .div-logo-text {
+    text-align: center;
+    display: block;
+  }
+  .div-body {
+    margin: 0 auto;
+  }
+  .div-more {
+    margin: 0 auto;
+  }
+}
+
+/* Desktop-ish */
+@media only screen and (min-width: 601px) {
+  .div-logo {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+    width: 300px;
+  }
+  .div-body {
+    margin: 0 auto;
+    width: 600px;
+  }
+  .div-more {
+    margin: 0 auto;
+    width: 600px;
+  }
+}
